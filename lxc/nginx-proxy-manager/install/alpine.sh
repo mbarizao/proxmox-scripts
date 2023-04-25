@@ -225,6 +225,7 @@ depends () {
 
 start_pre() {
   mkdir -p /tmp/nginx/body \
+  mkdir /run/nginx \
   /data/letsencrypt-acme-challenge
 
   export NODE_ENV=production
